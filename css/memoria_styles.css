@@ -1,0 +1,28 @@
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    width: 730px;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+.section2{
+    padding: 9%;
+}
