@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    align-self: center;
+    margin-right: 5%;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0.5%;
+}
+
+.main{
+    display: flex;
+    margin: 5%;
+}
+
+.card {
+    margin: 1%;
+}
