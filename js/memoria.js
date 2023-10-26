@@ -8,6 +8,7 @@ let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
 let timer = 30;
+let tiempoRestante = null;
 
 let mostrarMovimientos = document.getElementById("movimientos");
 let mostarAciertos = document.getElementById("aciertos");
@@ -17,17 +18,29 @@ let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
 numeros = numeros.sort(() => {return Math.random()-0.5});
 console.log(numeros);
 
+
 function contarTiempo(){
-    setInterval(() => {
+    tiempoRestante = setInterval(() => {
         timer--;
         mostarTiempo.innerHTML = `Tiempo: ${timer} segundos`;
-
         if(timer==0){
             alert("se acabo el tiempo");
+            clearInterval(tiempoRestante);
+            bloquearTarjeta();
         }
 
     }, 1000)
 }
+
+function bloquearTarjeta(){
+    for (i = 0, i <= 15; i++;){
+        let tarjetaBloqueada = document.getElementById(i)
+        tarjetaBloqueada.innerHTML = numeros[i];
+        tarjetaBloqueada.disabled = true;
+    }
+}
+
+
 
 function destapar(id){
     if(temporizador == false){
