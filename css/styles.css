@@ -1,25 +1,67 @@
+:root{
+    --colorNav: white;
+}
+
 *{
     margin: 0%;
     padding: 0%;
 }
 
 .nav {
-    background-color: red;
+    background-color: black;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
 }
 
-.menu {
+.titulo {
     align-self: center;
-    margin-right: 5%;
+}
+
+.titulo h1 {
+    color: var(--colorNav);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+}
+
+.menu {
+    display: inline-flex;
+    align-self: center;
+    margin-right: 10%;
 }
 
 .menu a {
+    color: var(--colorNav);
     text-decoration: none;
-    margin: 0.5%;
+    margin: 1%;
+    padding: 5%;
 }
 
 .main{
+    display: flex;
+    height: 92vh;
+    background-image: url(../imagenes/fondo_menu.jpg);
+    background-repeat: round;
+}
+
+.contenidoCentral{
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    color: var(--colorNav);
+}
+
+.contenidoCentral a{
+    color: var(--colorNav);
+    display: inline-block;
+    text-decoration: none;
+    background-color: gray;
+    margin-top: 3%;
+    padding: 2%;
+    border-radius: 25%;
+}
+
+.mainJuegos{
     display: flex;
     margin: 5%;
 }
