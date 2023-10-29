@@ -8,29 +8,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <header class="encabezado">
-        <nav  class="nav"  >
+    <header class="sticky-top">
+        <nav  class="nav">
             <div class="titulo">
                 <h1>GarCano Games</h1>
             </div>
             <menu class="menu">
-                <a href="#">Juegos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
+                <a href="#juegos">Juegos</a>
+                <a href="#noticias">Noticias</a>
+                <a href="#contacto">Contacto</a>
             </menu>
         </nav>
     </header>    
-
-    <div>
-        <main class="main">
+    <main class="main">
             <div class="contenidoCentral">
-                <h2>Disfruta de los mejores juegos arcade</h2>
+                <h2>Disfruta de los mejores juegos online</h2>
                 <p>Desarrollada por Erman Garcia Cano</p>
                 <a href="#juegos">Jugar Ahora</a>
             </div>
-        </main>  
+    </main>  
         
-        <main id="juegos" class="mainJuegos">
+    <section id="juegos" class="mainJuegos">
             <div class="card" style="width: 18rem;">
                 <img src="/imagenes/juego_memoria.avif" class="card-img-top" alt="memotex">
                 <div class="card-body">
@@ -84,10 +82,52 @@
                     <a href="/html5/memoria.html" class="btn btn-primary" target="_blank">Jugar</a>
                 </div>
             </div>
-        </main>
-    </div>
-    
+    </section>
 
+    <aside id="noticias">
+        <h2 class="tituloNoticas">Los Juegos mas esperados para cerrar el 2023</h2>
+
+        <div class="mainNoticias d-flex position-relative">
+            <img src="/imagenes/robocop.jpg" class="flex-shrink-0 me-3" alt="robocop">
+            <div>
+                <h5 class="mt-0">Robocop: Rogue City</h5>
+                <p>Genero: Shooter en primera persona.</p>
+                <p>Su fecha de lanzamiento sera el 02/11/2023 y esta diponible para PC PS5 Xbox Series X/S</p>
+            </div>
+        </div>
+
+        <div class="mainNoticias d-flex position-relative">
+            <img src="/imagenes/the_day_before.jpg" class="flex-shrink-0 me-3" alt="the day before">
+            <div>
+                <h5 class="mt-0">The Day Before</h5>
+                <p>Genero: Aventura de acción / MMO / Shooter en tercera persona / Shooter multijugador</p>
+                <p>Su fecha de lanzamiento sera el 10/11/2023 y esta diponible para PC PS5 Xbox Series X/S</p>
+                <p>The Day Before es un videojuego de acción en tercera persona con dosis de supervivencia con un fuerte componente online MMO en mundo abierto para PC, PlayStation 5 y Xbox Series programado en base a Unreal Engine. Está desarrollado por Fntastic y Mytona, y nos invitará a salir adelante en una América postpandémica plagada de zombis y otros peligros como caníbales.</p>
+            </div>
+        </div>
+
+        <div class="mainNoticias d-flex position-relative">
+            <img src="/imagenes/mario.jpg" class="flex-shrink-0 me-3" alt="Super Mario">
+            <div>
+                <h5 class="mt-0">Super Mario RPG Remake</h5>
+                <p>Genero: JRPG / Rol</p>
+                <p>Su fecha de lanzamiento sera el 17/11/2023 y esta diponible solo para Switch</p>
+                <p>En el remake de este clásico de rol de 1996 para Super Nintendo podremos unir fuerzas con un estrambótico grupo de héroes para salvar la Vía Estelar y parar los pies a los gamberros de la Banda de Fraguo. Este JRPG cuenta con secuencias cinemáticas y gráficos renovados que modernizan la inesperada alianza entre Mario, Bowser, Peach y los personajes originales Mallow y Geno. Podremos descubrir un mundo repleto de aliados y enemigos con la inolvidable banda sonora de Yoko Shimomura</p>
+            </div>
+        </div>
+
+        <div class="mainNoticias d-flex position-relative">
+            <img src="/imagenes/avatar.jpg" class="flex-shrink-0 me-3" alt="Avatar">
+            <div>
+                <h5 class="mt-0">Avatar: Frontiers of Pandora</h5>
+                <p>Genero: Aventura de acción.</p>
+                <p>Su fecha de lanzamiento sera el 07/12/2023 y esta diponible para PC PS5 Xbox Series X/S</p>
+                <p>Avatar: Frontiers of Pandora es un videojuego de acción en primera persona en mundo abierto desarrollado por Ubisoft para consolas PlayStation 5, Xbox Series y PC. Ambientado en Pandora, el mundo lejano de la epopeya cinematográfica de ciencia ficción de James Cameron, lideraremos como Na'vi una lucha contra la RDA en solitario o cooperativo.</p>
+            </div>
+        </div>
+
+
+    </aside>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
