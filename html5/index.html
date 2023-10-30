@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GarCano Games</title>
+    <link rel="icon" href="/imagenes/Garcano.png" type="png">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -11,6 +12,7 @@
     <header class="sticky-top">
         <nav  class="nav">
             <div class="titulo">
+                <img src="/imagenes/Garcano.png" alt="logo garcano">
                 <h1>GarCano Games</h1>
             </div>
             <menu class="menu">
@@ -83,7 +85,7 @@
                 </div>
             </div>
     </section>
-
+    <div class="lineaDivisor"></div>
     <aside id="noticias">
         <h2 class="tituloNoticas">Los Juegos mas esperados para cerrar el 2023</h2>
 
@@ -128,6 +130,26 @@
 
 
     </aside>
+    <div class="lineaDivisor"></div>
+    <section class="mainContacto" id="contacto">
+        <div class="tituloContacto">
+            <h2>Contacto</h2>
+        </div>
+        <div class="formulario">
+            <form action="contacto">
+                <label for="contacto" class="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="contacto" class="email">Correo Electronico</label>
+                <input type="email" name="email" id="email">
+                <label for="contacto" class="comentarios">Deje aqui su sugerencia</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escriba aqui......"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

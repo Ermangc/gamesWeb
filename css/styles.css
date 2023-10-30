@@ -15,7 +15,13 @@
 }
 
 .titulo {
+    display: flex;
+    align-items: center;
     align-self: center;
+}
+
+.titulo img {
+    height: 7em;
 }
 
 .titulo h1 {
@@ -75,4 +81,21 @@
 .mainNoticias{
     border: 1px black solid;
     margin: 5%;
+}
+
+.lineaDivisor{
+    border-top: 5px black solid;
+}
+
+.tituloContacto h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
