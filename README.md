@@ -1,2 +1,3 @@
 # gamesWeb
-pagina de juegos online, propios  de paginas externas
+pagina de juegos online, propios y de paginas externas
+

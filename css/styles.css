@@ -73,9 +73,10 @@
 .mainJuegos{
     display: flex;
     flex-flow: row wrap;
-    background-image: url(../imagenes/fondo_noticias1.jpg);
+    background-color: grey;
+    /*background-image: url(../imagenes/fondo_noticias1.jpg);
     background-repeat: round;
-    background-size: cover;
+    background-size: cover;*/
     padding-top: 7em;
 
 }
@@ -85,10 +86,20 @@
     padding: 1%;
 }
 
+
+.card-body{
+    z-index: -1;
+}
+
+.card:hover .card-body{
+    z-index: +2;
+}
+
 .noticias{
-    background-image: url(../imagenes/fondo_noticias1.jpg);
+    /*background-image: url(../imagenes/fondo_noticias1.jpg);
     background-repeat: round;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: grey;
 }
 
 .tituloNoticias {
@@ -98,9 +109,13 @@
 }
 
 .mainNoticias{
+    width: 80vw;
     color: var(--colorNav);
     border: 1px black solid;
     padding: 5%;
+    margin: 1em 5em;
+    margin-bottom: 0%;
+    background-color: tan;
 }
 .mainContacto{
     background-color: grey;
