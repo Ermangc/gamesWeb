@@ -1,4 +1,4 @@
-
+// games variables
 let tarjetaDestapada = 0;
 let tarjeta1 = null;
 let tarjeta2 = null;
@@ -10,13 +10,17 @@ let temporizador = false;
 let timer = 30;
 let tiempoRestante = null;
 
+// elementos
+
 let mostrarMovimientos = document.getElementById("movimientos");
 let mostarAciertos = document.getElementById("aciertos");
 let mostarTiempo = document.getElementById("tiempo");
+let refresh = document.getElementById('refresh');
 
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]
 numeros = numeros.sort(() => {return Math.random()-0.5});
 console.log(numeros);
+
 
 
 function contarTiempo(){
@@ -69,7 +73,8 @@ function destapar(id){
             mostarAciertos.innerHTML = `Aciertos: ${aciertos}`;
             
             if(aciertos==8){
-
+                mostarAciertos.innerHTML = `Aciertos: Felicitaciones!!!`; 
+                alert("Felicitaciones, lo has conseguido!")
             }
 
         }else(
@@ -79,8 +84,12 @@ function destapar(id){
                 tarjeta1.disabled = false;
                 tarjeta2.disabled = false;
                 tarjetaDestapada = 0;
-            }, 1000)
+            }, 500)
         )
     }
 
 }
+
+refresh.addEventListener('click', () => {
+    location.reload();
+})

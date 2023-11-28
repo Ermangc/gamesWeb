@@ -1,0 +1,40 @@
+
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#gameOver{
+    display: none;
+}
+
+#boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#scoreBoard{
+    display: inline-flex;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+.emptySquare{
+    background-color: blue;
+}
+
+.snakeSquare{
+    background-color: greenyellow;
+}
+
+.foodSquare{
+    background-color: chocolate;
+}

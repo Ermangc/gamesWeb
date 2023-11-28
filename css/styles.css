@@ -169,7 +169,7 @@
     letter-spacing: 1.5px;
     color: var(--colorNav);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .formulario input, .formulario textarea{

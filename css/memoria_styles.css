@@ -1,4 +1,6 @@
-
+*{
+    background-color: darkgray;
+}
 
 
 main{
@@ -12,7 +14,8 @@ button{
     height: 100px;
     width: 100px;
     font-size: 40px;
-    color: black;
+    color: azure;
+    background-color: darkslateblue;
 }
 
 button:hover{
@@ -21,8 +24,23 @@ button:hover{
 
 h1{
     text-align: center;
+    margin-bottom: 2.8em;
+    letter-spacing: 12px;
+    text-shadow: 2px 2px  grey;
 }
 
 .section2{
-    padding: 9%;
+    padding: 7%;
+    margin-left: 1em;
+    border: 2px solid grey;
+    box-shadow: 2px 3px darkblue;
+}
+
+#refresh{
+    color: black;
+    background-color: brown;
+    font-size: larger;
+    height: min-content;
+    box-shadow: 1px 1px black;
+    
 }
