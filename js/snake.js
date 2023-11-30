@@ -130,7 +130,7 @@ const createBoard = () => {
 }
 
 const setGame = () => {
-    snake = ['00', '01', '02', '03'];
+    snake = ['00', '01', '02'];
     score = snake.length - 4;
     direction = 'ArrowRight';
     boardSquares = Array.from(Array(boardSize), () => new Array(boardSize).fill(squareTypes.emptySquare));

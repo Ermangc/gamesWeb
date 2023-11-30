@@ -1,4 +1,13 @@
+body{
+    background-color: gray;
+}
 
+h1{
+    margin-left: 15vw;
+    color: green;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
 
 #board, .boardInfo{
     max-width: 500px;
@@ -13,14 +22,19 @@
     display: none;
 }
 
-#boardInfo{
+.boardInfo{
     display: flex;
-    justify-content: space-between;
     margin-top: 10px;
 }
 
 #scoreBoard{
     display: inline-flex;
+    margin: auto 5px;
+}
+
+#start{
+    background-color: green;
+    margin-left: 29.8em;
 }
 
 .square{
@@ -28,13 +42,13 @@
 }
 
 .emptySquare{
-    background-color: blue;
+    background-color: azure;
 }
 
 .snakeSquare{
-    background-color: greenyellow;
+    background-color: blueviolet;
 }
 
 .foodSquare{
-    background-color: chocolate;
+    background-color: darkblue;
 }
